@@ -1,0 +1,74 @@
+:root{
+    --red: #931B21;
+    --yellow: #FDD25A;
+    --blue: #101434;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.custom-navbar{
+    background-color: rgba(0,0,0,0.3);
+}
+.custom-navbar ul li{
+    margin-right: 30px;
+}
+.custom-navbar ul li a{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+.custom-navbar ul li.menu{
+    border: 1px solid #fff
+}
+.custom-navbar ul li.menu{
+    border: 1px solid #fff
+}
+.card-box{
+    border: none;
+}
+.header-content{
+    height: 300px;
+    background-color: var(--red);
+}
+.custom-nav .nav-item .nav-link{
+    color: black;
+    background: var(--yellow);
+}
+.custom-nav .nav-item.active .nav-link{
+    color: #fff;
+}
+.custom-nav .nav-item:hover .nav-link{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.know-more-box{
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--yellow);
+    font-size: 2.5em;
+}
+.want{
+    border-bottom: 2px solid var(--yellow);
+}
+
+footer{
+    background: var(--red);
+    color: #fff;
+    font-size: 0.9em;
+}
+
+
+footer h5{
+    font-size: 1.2em;
+}
+footer i.custom-icon{
+    font-size: 2em;
+}
+
+footer .icon-lg{
+    font-size: 3.5em;
+}

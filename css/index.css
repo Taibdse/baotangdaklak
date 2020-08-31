@@ -39,20 +39,19 @@ header .header-title{
 }
 .custom-navbar ul li{
     margin-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .custom-navbar ul li a{
     font-weight: bold;
     font-size: 1.2em;
     color: #fff;
+    text-transform: uppercase;
 }
 .custom-navbar ul li.menu{
     border: 1px solid #fff
 }
-.custom-navbar ul li.menu{
-    border: 1px solid #fff
-}
+
 .card-box{
     border: none;
 }
@@ -62,6 +61,7 @@ header{
 }
 .custom-nav .nav-item {
     margin: 20px 60px;
+    margin-left: 0;
 }
 
 .custom-nav .nav-item .nav-link{
@@ -115,4 +115,10 @@ img.icon{
 img.sm-icon{
     width: 20px;
     margin-right: 5px;
+}
+
+
+.instruction-diagram{
+    height: 300px;
+    background-color: var(--red);
 }

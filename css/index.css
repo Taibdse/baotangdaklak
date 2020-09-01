@@ -8,6 +8,81 @@ body{
     font-size: 14px;
 }
 
+.menu-search{
+    width: 100vw;
+    height: 100vh;
+    background: var(--red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-search.open{
+    transform: translateY(0);
+}
+
+.search-input{
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff!important;
+    border-right: none;
+}
+
+.search-input::placeholder{
+    color: #fff;
+}
+
+.search-input:focus{
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #fff;
+    color: #fff;
+    border-right: none;
+}
+
+span.input-group-text{
+    background-color: transparent!important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+}
+.input-group-text > img{
+    width: 20px!important;
+    
+}
+.menu-search .btn-custom{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.text-red{
+    color: var(--red);
+}
+.text-yellow{
+    color: var(--yellow);
+}
+.text-blue{
+    color: var(--blue);
+}
+.custom-border-bottom{
+    border-bottom: 2px solid var(--yellow);
+}
+
+.btn-custom{
+    border: 1px solid var(--red);
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    color: var(--red);
+}
+
 header .header-title{
     color: #fff;
     font-size: 80px;
@@ -121,4 +196,19 @@ img.sm-icon{
 .instruction-diagram{
     height: 300px;
     background-color: var(--red);
+}
+
+.right-nav li a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.right-nav li span{
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.right-nav li.active span{
+    margin-right: 20px;
+    opacity: 1;
 }

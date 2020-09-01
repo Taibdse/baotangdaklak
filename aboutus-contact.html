@@ -35,6 +35,7 @@
             height: 160px;
             margin-top: 10px;
         }
+        
     </style>
 </head>
 <body>
@@ -56,7 +57,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Ticket</a>
                         </li>
-                        <li class="nav-item menu">
+                        <li class="nav-item menu" id="openFullscreenMenu">
                             <a class="nav-link" href="#">MENU</a>
                         </li>
                     </ul>
@@ -67,6 +68,123 @@
             <h3 class="header-title">ABOUT US</h3>
         </div>
     </header>
+
+    <div class="menu-search">
+        <nav class="navbar navbar-expand-lg custom-navbar py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo.png" style="width: 150px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                       
+                        <li class="nav-item">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control search-input" placeholder="SEARCH HERE...">
+
+                                <div class="input-group-append">
+                                  <span class="input-group-text"">
+                                      <img  src="/img/icons/search.png" style="" alt="">
+                                  </span>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#">
+                                <img src="/img/icons/exit.png" id="closeFullscreenMenu" style="width: 30px;" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn-custom">TICKETS</button>
+                    <div class="text-white my-4">
+                        OPENING TIMES
+                    </div>
+                    <div class="text-white">MUSEUM OPEN 8AM - 4:30PM (LAST ADMISSION AT 4PM), Open: Tuesday - Sunday (including holidays)</div>
+                    <div class="text-white mt-3"><span style="border-bottom: 2px solid #fff;">PRESS</span> CONTACT</div>
+                    <div class="text-white pl-2 mt-3">Daklak Museum,</div>
+
+                    <div class="mt-3">
+                        <div class="d-inline-block">
+                            <img src="/img/icons/phone.png" class="sm-icon mb-1" alt="">
+                        </div>
+                        <div class="d-inline-block text-white">
+                            +84 090 808 989<br/>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <div class="d-inline-block">
+                            <img src="/img/icons/mail.png" class="sm-icon mb-1" alt="">
+                        </div>
+                        <div class="d-inline-block text-white">
+                            daklakmuseum@gmail.com
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <img src="/img/icons/web.png" class="icon" alt="">
+                        <img src="/img/icons/facebook.png" class="icon" alt="">
+                        <img src="/img/icons/youtube.png" class="icon" alt="">
+                    </div>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3">
+                    <ul class="nav flex-column right-nav mt-5">
+                        <li class="nav-item text-right">
+                            <a class="nav-link active" href="#">
+                                <span>VIRTUAL MUSEUM</span>
+                                <img src="/img/icons/left-stroke.png" 
+                                    class="d-inline-block ml-2" 
+                                    style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#" class="d-inline-block">
+                                <span>NEWS</span>
+                                <img src="/img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                          <a class="nav-link" href="#">
+                              <span>COLLECTIONS</span>
+                              <img src="/img/icons/left-stroke.png" 
+                              class="d-inline-block ml-2" 
+                              style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">
+                                <span>EXHIBITION</span>
+                                <img src="/img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">
+                                <span>ABOUT US</span>
+                                <img src="/img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <ul class="nav my-5 custom-nav">
@@ -190,5 +308,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="/js/custom/index.js"></script>
 </body>
 </html>

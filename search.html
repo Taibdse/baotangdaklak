@@ -10,21 +10,31 @@
     <script src="/js/fontawesome.js"></script>
     <title>Dak Lak Museum</title>
     <style>
-        
-       .form-control{
-           border-color: var(--red) ;
-           margin-bottom: 20px;
-       }
-       .form-control:focus{
-            border-color: var(--red) ;
-            box-shadow: none;
-       }
-       .btn-custom{
-            border: 1px solid var(--red);
-            padding: 10px 40px;
-            border-radius: 20px;
-            background-color: #fff;
-       }
+        .social-boxes > div{
+            margin: 30px;
+            width: 20%;
+        }
+        .social-box .up-box, .social-box .down-box{
+            
+            background-color: var(--red);
+        }
+
+        .social-boxes  .social-box:nth-child(5){
+            margin-right: 0;
+        }
+
+        .social-boxes  .social-box:nth-child(1){
+            margin-left: 0;
+        }
+
+        .social-box .up-box{
+            height: 50px;
+        }
+
+        .social-box .down-box{
+            height: 160px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -74,55 +84,43 @@
 
     <section>
         <div class="container">
-            <div class="col-12">
-                <form action="">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label for="">FULLNAME</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="">ADDRESS</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="">PHONE NUMBER</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="">EMAIL</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="">VOLUNTEER PROGRAMS WANT TO APPLY</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-7">
-                                    <label for="">TIME</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="col-sm-5">
-                                    <label for="">TO</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-12">
-                            <label for="">EXTRA NOTES</label>
-                            <textarea  rows="4" class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn-custom">SEND</button>
-                    </div>
-                </form>
+            <div class="instruction-diagram"></div>
+            <h6 class="text-center mt-3">Instruction diagrams</h6>
+
+            <div class="d-flex flex-nowrap social-boxes">
+                <div class="social-box">
+                    <h5 class="person-name text-center">PHONE NUMBER</h5>
+                    <div class="up-box"></div>
+                    <div class="down-box"></div>
+                </div>
+                <div class="social-box">
+                    <h5 class="person-name text-center">EMAIL</h5>
+                    <div class="up-box"></div>
+                    <div class="down-box"></div>
+                </div>
+                <div class="social-box">
+                    <h5 class="person-name text-center">WEB</h5>
+                    <div class="up-box"></div>
+                    <div class="down-box"></div>
+                </div>
+                <div class="social-box">
+                    <h5 class="person-name text-center">FACEBOOK</h5>
+                    <div class="up-box"></div>
+                    <div class="down-box"></div>
+                </div>
+                <div class="social-box">
+                    <h5 class="person-name text-center">YOUTUBE</h5>
+                    <div class="up-box"></div>
+                    <div class="down-box"></div>
+                </div>
             </div>
+
+            <div class="instruction-diagram mt-5"></div>
         </div>
 
     </section>
+
+
 
     <section class="mt-5">
         <div class="container">
@@ -150,6 +148,9 @@
                         <img src="/img/icons/web.png" class="icon" alt="">
                         <img src="/img/icons/facebook.png" class="icon" alt="">
                         <img src="/img/icons/youtube.png" class="icon" alt="">
+                        <!-- <i class="fas fa-globe icon-lg mr-2"></i>
+                        <i class="fab fa-facebook icon-lg mr-2"></i>
+                        <i class="far fa-play-circle icon-lg"></i> -->
                     </div>
                 </div>
                 <div class="col-sm-4">

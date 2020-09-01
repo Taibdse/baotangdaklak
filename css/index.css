@@ -206,6 +206,7 @@ img.sm-icon{
 .right-nav li span{
     transition: all 0.3s;
     opacity: 0.8;
+    font-size: 20px;
 }
 
 .right-nav li.active span{

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"  >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/fontawesome.js"></script>
     <title>Dak Lak Museum</title>
     <style>
         
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg custom-navbar py-4">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/img/logo.png" style="width: 150px" alt="">
+                    <img src="./img/logo.png" style="width: 150px" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Ticket</a>
                         </li>
-                        <li class="nav-item menu">
+                        <li class="nav-item menu" id="openFullscreenMenu">
                             <a class="nav-link" href="#">MENU</a>
                         </li>
                     </ul>
@@ -44,6 +44,125 @@
             <h3 class="header-title">ABOUT US</h3>
         </div>
     </header>
+
+    <div class="menu-search">
+        <nav class="navbar navbar-expand-lg custom-navbar py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" style="width: 150px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                       
+                        <li class="nav-item">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control search-input" placeholder="SEARCH HERE...">
+
+                                <div class="input-group-append">
+                                  <span class="input-group-text"">
+                                      <img  src="./img/icons/search.png" style="" alt="">
+                                  </span>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#">
+                                <img src="./img/icons/exit.png" id="closeFullscreenMenu" style="width: 30px;" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn-custom">TICKETS</button>
+                    <div class="text-white my-4">
+                        OPENING TIMES
+                    </div>
+                    <div class="text-white">MUSEUM OPEN 8AM - 4:30PM (LAST ADMISSION AT 4PM), Open: Tuesday - Sunday (including holidays)</div>
+                    <div class="text-white mt-4"><span style="border-bottom: 2px solid #fff; padding-bottom: 5px;">PRESS</span> CONTACT</div>
+                    <div class="text-white mt-4">
+                        <span class="sm-box-icon"></span> Daklak Museum,
+                    </div>
+
+                    <div class="my-4">
+                        <div class="d-inline-block">
+                            <img src="./img/icons/phone.png" class="sm-icon mb-1" alt="">
+                        </div>
+                        <div class="d-inline-block text-white">
+                            +84 090 808 989<br/>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="d-inline-block">
+                            <img src="./img/icons/mail.png" class="sm-icon mb-1" alt="">
+                        </div>
+                        <div class="d-inline-block text-white">
+                            daklakmuseum@gmail.com
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <img src="./img/icons/web.png" class="icon" alt="">
+                        <img src="./img/icons/facebook.png" class="icon" alt="">
+                        <img src="./img/icons/youtube.png" class="icon" alt="">
+                    </div>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-3">
+                    <ul class="nav flex-column right-nav mt-5">
+                        <li class="nav-item text-right">
+                            <a class="nav-link active" href="#">
+                                <span>VIRTUAL MUSEUM</span>
+                                <img src="./img/icons/left-stroke.png" 
+                                    class="d-inline-block ml-2" 
+                                    style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#" class="d-inline-block">
+                                <span>NEWS</span>
+                                <img src="./img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                          <a class="nav-link" href="#">
+                              <span>COLLECTIONS</span>
+                              <img src="./img/icons/left-stroke.png" 
+                              class="d-inline-block ml-2" 
+                              style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">
+                                <span>EXHIBITION</span>
+                                <img src="./img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">
+                                <span>ABOUT US</span>
+                                <img src="./img/icons/left-stroke.png" 
+                                class="d-inline-block ml-2" 
+                                style="width: 8px;" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <ul class="nav my-5 custom-nav">
@@ -59,13 +178,15 @@
         </ul>
     </div>
 
+    
+
     <section>
         <h5 class="text-center section-title">BOARD OF DIRECTORS</h5>
         <div class="container mt-5">
             <div class="row">
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. DINH MOT</h5>
                             <div>President</div>
@@ -80,7 +201,7 @@
             <div class="row">
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. TRAN HUNG</h5>
                             <div>Vice President</div>
@@ -93,7 +214,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class=" person-name">MR. T.Q. NAM</h5>
                             <div>Vice President</div>
@@ -106,7 +227,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. P.X QUANG</h5>
                             <div>Vice President</div>
@@ -128,7 +249,7 @@
             <div class="row mt-5">
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. D.T SAM</h5>
                             <div>Manager</div>
@@ -141,7 +262,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. P.N ANH</h5>
                             <div>Deputy Manager</div>
@@ -154,7 +275,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MRS. D.T.T HOAI</h5>
                             <div>Deputy Manager</div>
@@ -176,7 +297,7 @@
             <div class="row mt-5">
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. N.T.B TUYEN</h5>
                             <div>Manager</div>
@@ -189,7 +310,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MR. D.D NGOC</h5>
                             <div>Deputy Manager</div>
@@ -202,7 +323,7 @@
                 </div>
                 <div class="col-sm-3 mx-auto text-center">
                     <div class="card card-box">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                        <img src="./img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5 class="person-name">MRS. L.M KHA</h5>
                             <div>Deputy Manager</div>
@@ -241,11 +362,11 @@
             <div>MUSEUM OPEN 8AM - 4:30PM (LAST ADMISSION AT 4PM), Open: Tuesday - Sunday (including holidays)</div>
             <div class="row mt-4">
                 <div class="col-sm-4">
-                    <img src="/img/logo.png" style="width: 100px" alt="">
+                    <img src="./img/logo.png" style="width: 100px" alt="">
                     <div class="mt-3">
-                        <img src="/img/icons/web.png" class="icon" alt="">
-                        <img src="/img/icons/facebook.png" class="icon" alt="">
-                        <img src="/img/icons/youtube.png" class="icon" alt="">
+                        <img src="./img/icons/web.png" class="icon" alt="">
+                        <img src="./img/icons/facebook.png" class="icon" alt="">
+                        <img src="./img/icons/youtube.png" class="icon" alt="">
                         <!-- <i class="fas fa-globe icon-lg mr-2"></i>
                         <i class="fab fa-facebook icon-lg mr-2"></i>
                         <i class="far fa-play-circle icon-lg"></i> -->
@@ -255,7 +376,7 @@
                     <h5>CONTACT</h5>
                     <div class="mt-3">
                         <div class="d-inline-block">
-                            <img src="/img/icons/mail.png" class="sm-icon mb-3" alt="">
+                            <img src="./img/icons/mail.png" class="sm-icon mb-3" alt="">
                         </div>
                         <div class="d-inline-block">
                             +84 090 808 989<br/>
@@ -264,7 +385,7 @@
                     </div>
                     <div class="mt-3">
                         <div class="d-inline-block">
-                            <img src="/img/icons/location.png" class="sm-icon mb-3" alt="">
+                            <img src="./img/icons/location.png" class="sm-icon mb-3" alt="">
                         </div>
                         <div class="d-inline-block">
                             02 Y Ngong, Tan Tien Ward, Buon Ma Thuot city, Dak Lak<br/>
@@ -285,8 +406,9 @@
         </div>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.5.1.slim.min.js"  ></script>
+    <script src="./js/popper.min.js"  ></script>
+    <script src="./js/bootstrap.min.js"  ></script>
+    <script src="./js/custom/index.js"></script>
 </body>
 </html>
